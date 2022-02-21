@@ -43,7 +43,9 @@ class DataViewSet(viewsets.ModelViewSet):
                     title = re.search('(Item\s\d+)', title).group()
                 except:
                     pass
-
+                
+                if len(title) > 30:
+                    title = title[:len(title) // 2] + "..."
 
                 data.append(
                     Data(
