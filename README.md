@@ -22,5 +22,5 @@ curl --location --request POST 'http://localhost:8000/data/upload_csv/' --form '
 ```
 Get Data:
 ```
-curl --location --request GET 'http://localhost:8000/data/
+curl --location --request GET 'http://localhost:8000/data/'
 ```
